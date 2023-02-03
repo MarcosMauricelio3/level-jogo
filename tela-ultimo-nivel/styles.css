@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+html {
+  background: url('https://mysterio.yahoo.com/api/res/1.2/spsNvSuoNx1RdiuAVAs_.Q--/ZHByPTI7dz04NzU7YXBwaWQ9ZW5nYWRnZXQ-/https://s.yimg.com/os/creatr-uploaded-images/2022-12/3a0b8950-718f-11ed-bf7f-a502df226bac.cf.webp');
+  min-height: 100vh;
+  background-size: cover;
+}
+
+#level_completo {
+  padding: 2rem;
+  z-index: 1000;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.9);
+  backdrop-filter: blur(5px);
+  text-align: center;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Passion One', system-ui;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  /*   display: none; */
+}
+#level_completo * {
+  box-sizing: border-box;
+}
+
+#level_completo h1 {
+  font-size: 7rem;
+  margin: 0 0 0rem 0;
+/*   font-variant: small-caps; */
+}
+
+#ultima_corrida {
+  font-size: 1.5rem;
+  letter-spacing: .15rem;
+  margin-bottom: 2rem;
+}
+#ultima_corrida span {
+  font-size: 3rem;
+  line-height: 80%;
+  display: block;
+}
+
+#level_completo .runs {
+/*   margin: 4rem 0; */
+}
+
+#level_completo .current_run,
+#level_completo .melhor_corrida {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 2rem;
+}
+
+#level_completo .current_run {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: white;
+  width: fit-content;
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+
+}
+#level_completo .current_run span {
+  font-size: 5rem;
+  line-height: 80%;
+  font-weight: 900;
+  display: block;
+  letter-spacing: .25rem;
+}
+
+#level_completo .melhor_corrida {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+#level_completo .melhor_corrida table {
+  margin: 0 auto;
+  font-size: 3rem;
+  border-radius: .5rem;
+  border-collapse: collapse;
+/*   min-width: 200px; */
+}
+#level_completo .melhor_corrida table tr:not(:last-child) {
+  border-bottom: 1px solid white;
+}
+#level_completo .melhor_corrida table td {
+  padding: 0 1rem;
+/*   border: 1px solid white; */
+}
+#level_completo td:last-child {
+  text-align: left;
+}
+#level_completo .gold td:first-child {
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle, gold 40%, transparent 41%);
+}
+#level_completo .silver td:first-child {
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle, silver 40%, transparent 41%);
+}
+#level_completo .bronze td:first-child {
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle, darkgoldenrod 40%, transparent 41%);
+}
+
+#level_completo .pressione_espaço {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+}
+#level_completo .pressione_espaço span {
+  background: white;
+  color: black;
+  padding: .25rem .75rem 0 .75rem;
+  border-radius: .25rem;
+  letter-spacing: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#level_completo button {
+  font-size: 1.5rem;
+  padding: .5rem 2rem;
+  font-family: 'Passion One', system-ui;
+  line-height: 100%;
+  border-radius: 2rem;
+  background: white;
+  position: absolute;
+  cursor: pointer;
+}
+
+#proximo_nivel {
+  top: 1rem;
+  right: 1rem;
+}
+#menu_niveis {
+  top: 1rem;
+  left: 1rem;
+  transform-origin: 0% 50%;
+  transform: scale(.75);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id='level_completo'>
+        <h1>NÍVEL A</h1>
+        <div id='ultima_corrida'>
+          <span>0:00.00</span>
+          TEMPO
+        </div>
+        <button id='proximo_nivel'>PROXIMO NÍVEL ></button>
+        <button id='menu_niveis'>NÍVEL</button>
+        <div class='runs'>
+          <div class='current_run'>
+            <span>0:00.00</span>
+            Melhor tempo atual</div>
+          <div class='melhor_corrida'>
+            <!--       Goals -->
+            <table>
+              <tr class='ouro'>
+                <td></td>
+                <td>0:03.00</td>
+              </tr>
+              <tr class='prata'>
+                <td></td>
+                <td>0:04.00</td>
+              </tr>
+              <tr class='bronze'>
+                <td></td>
+                <td>0:05.00</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <p class='pressione_espaço'>Pressione <span onclick='javascript: this.parentElement.parentElement.style.display = "none"'>ESPAÇO</span> PARA COMEÇAR</p>
+      </div>
+</body>
+</html>
